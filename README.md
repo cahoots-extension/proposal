@@ -1,6 +1,6 @@
 # cahoots - proposal
 
-The web component for suggesting new cahoot connections.
+The web component for suggesting new cahoots connections.
 
 ## Usage
 
