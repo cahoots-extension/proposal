@@ -21,6 +21,8 @@ var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var mocha = require('gulp-mocha');
 var uglify = require('gulp-uglify');
+var stringify = require('stringify');
+var cssify = require('cssify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
@@ -62,6 +64,9 @@ gulp.task('browserify', function build () {
         entries: [path.join(__dirname, pkg.main)],
         standalone: 'cahoots.api'
     });
+
+    bundler.transform(stringify(['.html']));
+    bundler.transform(cssify);
 
     var bundle = function b () {
         return bundler

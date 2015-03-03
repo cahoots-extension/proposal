@@ -1,0 +1,24 @@
+.cahoots-proposal-thanks {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+    .cahoots-proposal-thanks > .cahoots-proposal-thanks--headline {
+        font-weight: 100;
+    }
+
+    .cahoots-proposal-thanks > .cahoots-proposal-thanks--description {
+        font-weight: 100;
+        line-height: 1.4em;
+        margin-bottom: 45px;
+    }
+
+.button {
+    border: 4px solid #F53262;
+    color: #F53262;
+    text-decoration: none;
+}
+
+.button.button-huge {
+    padding: 15px 20px;
+}

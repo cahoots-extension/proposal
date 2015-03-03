@@ -22,6 +22,8 @@
     "globals": {
         "describe": false,
         "it": false,
-        "document": false
+        "document": false,
+        "HTMLElement": false,
+        "grecaptcha": false
     }
 }
