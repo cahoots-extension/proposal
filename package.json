@@ -1,0 +1,58 @@
+{
+  "name": "cahoots-proposal",
+  "version": "1.0.0",
+  "description": "The web component for suggesting new cahoot connections.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp",
+    "lint": "gulp lint",
+    "specs": "gulp specs",
+    "checkstyle": "gulp checkstyle"
+  },
+  "pre-commit": [
+    "lint",
+    "checkstyle",
+    "specs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cahoots-extension/proposal.git"
+  },
+  "keywords": [
+    "cahoots.pw",
+    "proposal",
+    "web components"
+  ],
+  "author": "cahoots.pw",
+  "contributors": [
+    {
+      "name": "Alexander Barnickel",
+      "email": "alex@alba.io",
+      "url": "http://cahoots.pw"
+    },
+    {
+      "name": "Jonas Bergmeier",
+      "email": "jonas.bergmeier@gmail.com",
+      "url": "http://cahoots.pw"
+    },
+    {
+      "name": "André König",
+      "email": "andre.koenig@posteo.de",
+      "url": "http://andrekoenig.info"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cahoots-extension/proposal/issues"
+  },
+  "homepage": "https://github.com/cahoots-extension/proposal",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-mocha": "^2.0.0",
+    "jshint-stylish": "^1.0.1",
+    "pre-commit": "^1.0.5",
+    "run-sequence": "^1.0.2"
+  }
+}
