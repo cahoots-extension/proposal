@@ -4,7 +4,7 @@ The web component for suggesting new cahoots connections.
 
 ## Usage
 
-Put the following tag to your HTML file:
+Add the following tag to your HTML file:
 
 ```html
 <cahoots-proposal></cahoots-proposal>
