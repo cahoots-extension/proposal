@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cahoots-extension/proposal.git"
+    "url": "https://github.com/getcahoots/proposal.git"
   },
   "keywords": [
     "cahoots.pw",
@@ -45,9 +45,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cahoots-extension/proposal/issues"
+    "url": "https://github.com/getcahoots/proposal/issues"
   },
-  "homepage": "https://github.com/cahoots-extension/proposal",
+  "homepage": "https://github.com/getcahoots/proposal",
   "devDependencies": {
     "browserify": "^9.0.3",
     "cssify": "^0.6.0",
