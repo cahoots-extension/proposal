@@ -7,7 +7,7 @@
  */
 
 /**
- * @author André König <andre.koenig@posteo.de>
+ * @author André König <andre@cahoots.ninja>
  *
  */
 
