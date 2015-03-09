@@ -21,11 +21,12 @@ var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var mocha = require('gulp-mocha');
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 var stringify = require('stringify');
-var cssify = require('cssify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
+var minifycss = require('gulp-minify-css');
 var sequence = require('run-sequence');
 
 var pkg = require('./package.json');
@@ -66,7 +67,6 @@ gulp.task('browserify', function build () {
     });
 
     bundler.transform(stringify(['.html']));
-    bundler.transform(cssify);
 
     var bundle = function b () {
         return bundler
@@ -81,6 +81,17 @@ gulp.task('browserify', function build () {
     return bundle();
 });
 
+gulp.task('styles', function styles () {
+    return gulp.src(path.join(__dirname, 'lib', '**', '*.css'))
+        .pipe(minifycss())
+        .pipe(concat(pkg.name + '.min.css'))
+        .pipe(gulp.dest(paths.build));
+});
+
+gulp.task('build', function build (callback) {
+    return sequence('browserify', 'styles', callback);
+});
+
 gulp.task('dev', function development () {
     return gulp.watch(paths.sources, ['browserify']);
 });
@@ -90,5 +101,5 @@ gulp.task('test', function test (callback) {
 });
 
 gulp.task('default', function defaultTask (callback) {
-    return sequence('lint', 'checkstyle', 'specs', 'browserify', callback);
+    return sequence('lint', 'checkstyle', 'specs', 'build', callback);
 });

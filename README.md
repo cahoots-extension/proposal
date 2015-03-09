@@ -2,6 +2,20 @@
 
 The web component for suggesting new cahoots connections.
 
+## Installation
+
+JavaScript:
+
+```html
+    <script src="cahoots-proposal.min.js"></script>
+```
+
+CSS:
+
+```html
+    <link rel="stylesheet" href="cahoots-proposal.min.css">
+```    
+
 ## Usage
 
 Add the following tag to your HTML file:

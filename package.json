@@ -50,10 +50,11 @@
   "homepage": "https://github.com/getcahoots/proposal",
   "devDependencies": {
     "browserify": "^9.0.3",
-    "cssify": "^0.6.0",
     "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.2",
+    "gulp-minify-css": "^0.5.1",
     "gulp-mocha": "^2.0.0",
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.4",
