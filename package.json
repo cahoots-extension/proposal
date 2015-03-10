@@ -29,17 +29,24 @@
   "contributors": [
     {
       "name": "Alexander Barnickel",
-      "email": "alex@alba.io",
-      "url": "http://cahoots.pw"
+      "email": "alex@cahoots.ninja"
     },
     {
       "name": "Jonas Bergmeier",
-      "email": "jonas.bergmeier@gmail.com",
-      "url": "http://cahoots.pw"
+      "email": "jonas@cahoots.ninja",
+      "url": "http://jonasbergmeier.net"
+    },
+    {
+      "name": "Oliver Sommer",
+      "email": "oliver@cahoots.ninja"
+    },
+    {
+      "name": "Julian Fath",
+      "email": "julian@cahoots.ninja"
     },
     {
       "name": "André König",
-      "email": "andre.koenig@posteo.de",
+      "email": "andre@cahoots.ninja",
       "url": "http://andrekoenig.info"
     }
   ],
