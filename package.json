@@ -76,6 +76,7 @@
     "is-url": "^1.2.0",
     "reactive": "^1.2.0",
     "webcomponents.js": "0.5.4-1",
-    "xhr": "^2.0.1"
+    "xhr": "^2.0.1",
+    "gulp-install": "~0.2.0"
   }
 }
