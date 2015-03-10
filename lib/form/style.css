@@ -1,7 +1,6 @@
 .cahoots-proposal-form {
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
-    font-family: sans-serif;
     margin:3%;
     padding:20px 40px;
 
@@ -42,7 +41,8 @@
 
         .cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error {
             color: #F53262;
-            margin: 4px 0 20px;
+            margin: 4px 0 10px;
+            font-size: 0.8em
         }
 
         .cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error.visible {
@@ -58,13 +58,11 @@
     }
 
         .cahoots-proposal-form > .cahoots-proposal-form--buttons > input[type=submit] {
-            background:#fff;
-            border: 3px solid #F53262;
-            color: #F53262;
-            display:inline-box;
-            font-weight: 100;
-            padding: 5px 10px;
-            text-align: center;
-            font-weight: bold;
-            box-sizing: border-box;
+            padding: 13px 18px 14px;
+            border-radius: $bigger-radius*1.5;
+            color: #fff;
+            font-weight: 400;
+            font-size: 1em;
+            margin-right: 15px;
+            background: $default-color;
         }
