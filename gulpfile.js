@@ -63,7 +63,7 @@ gulp.task('checkstyle', function checkstyle () {
 gulp.task('browserify', function build () {
     var bundler = browserify({
         entries: [path.join(__dirname, pkg.main)],
-        standalone: 'cahoots.api'
+        standalone: 'cahoots.proposal'
     });
 
     bundler.transform(stringify(['.html']));
