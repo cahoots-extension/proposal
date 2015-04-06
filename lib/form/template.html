@@ -15,6 +15,12 @@
         </div>
 
         <div class="cahoots-proposal-form--entry">
+            <label class="cahoots-proposal-form--entry-label" for="">Informationen zum Autor</label>
+            <input class="cahoots-proposal-form--entry-field" type="text" value="{authorInfo}" on-input="setAuthorInfo">
+            <small class="cahoots-proposal-form--entry-error" data-visible="errors.authorInfo">Bitte geben Sie eine gültige URL an.</small>
+        </div>
+
+        <div class="cahoots-proposal-form--entry">
             <label class="cahoots-proposal-form--entry-label" for="">Name der Verbindung</label>
             <input class="cahoots-proposal-form--entry-field" type="text" value="{organizationName}", on-input="setOrganizationName">
             <small class="cahoots-proposal-form--entry-error" data-visible="errors.organizationName">Bitte geben Sie den Namen der Organization an.</small>
@@ -30,6 +36,11 @@
             <label class="cahoots-proposal-form--entry-label" for="">Quelle</label>
             <input class="cahoots-proposal-form--entry-field" type="text" value="{cahootsSource}" on-input="setCahootsSource">
             <small class="cahoots-proposal-form--entry-error" data-visible="errors.cahootsSource">Bitte geben Sie eine gültige URL für die Quelle an.</small>
+        </div>
+
+        <div class="cahoots-proposal-form--entry">
+            <label class="cahoots-proposal-form--entry-label" for="">Rolle / Funktion</label>
+            <input class="cahoots-proposal-form--entry-field" type="text" value="{role}", on-input="setRole">
         </div>
 
         <div class="cahoots-proposal-form--entry">
