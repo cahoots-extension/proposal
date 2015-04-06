@@ -1,4 +1,4 @@
-# UNRELEASED
+# 1.0.0 (2015-04-06)
 
   * 92ea687 New `authorInfo` and `role` fields (#2, #3).
   * 5e94b65 Implemented communication with the cahoots submission platform.
